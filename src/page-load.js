@@ -11,14 +11,25 @@ export default function PageLoad(){
   desc.classList.add('desc');
   const headText = document.createElement('div');
   headText.classList.add('headtext');
+  const descText = document.createElement('div');
 
-  //add element to dom
+
+  //add element content
   headText.textContent = 'Pinetrant';
   logo.src = Logo;
-  desc.textContent = `Pinetrant Restaurant is so famous for it special pineapples
-    which we serve for all customers at the end of every meal.
-    It's one of the best place to have fun with friends on vacations. `;
+  descText.textContent = 
+      `--tab Pinetrant Restaurant is so famous for it's special pineapples
+      which we serve for all customers at the end of every meal.
+      It's one of the best place to have fun with friends on vacations.
+      Please visit our menu page we have delicious items just for you.
+      Don't let it cool. Grab your's at our restaurant.
+      `;
+    descText.innerHTML = descText.innerHTML.replace(/--br\r?/g, '<br />');
+    descText.innerHTML = descText.innerHTML.replace(/--tab\r?/g, '&emsp;');
 
+
+  //add to dom
+  desc.append(descText);
   headline.append(logo, headText);
   content.append(headline, desc);
 
