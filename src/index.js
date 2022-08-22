@@ -10,7 +10,7 @@ import Contact  from './contact.js';
       this.domRefer();
       this.domCreate();
       this.bindElem();
-      Contact();
+      PageLoad();
     },
     domRefer: function(){
       this.content = document.querySelector('.content');
