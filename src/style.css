@@ -79,3 +79,6 @@ body{
   place-items: center;
   align-content: start;
 }
+.tabs > div{
+  cursor: pointer;
+}
