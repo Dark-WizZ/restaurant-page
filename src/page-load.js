@@ -1,5 +1,6 @@
 import Logo from './logo.png';
 
+
 export default function PageLoad(){
   //dom reference
   const content =  document.querySelector('.content');
@@ -12,6 +13,7 @@ export default function PageLoad(){
   const headText = document.createElement('div');
   headText.classList.add('headtext');
   const descText = document.createElement('div');
+
 
 
   //add element content
